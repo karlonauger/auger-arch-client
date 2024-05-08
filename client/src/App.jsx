@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './components/canvas';
 
 import React from 'react';
+import ReactGA from 'react-ga4';
 
 import DotCanvas from './components/dotCanvas';
 import Navbar from './components/navbar';
@@ -13,6 +14,11 @@ import Tetris from './components/tetris';
 import Infrastructure from './components/infrastructure';
 import Architecture from './components/architecture';
 import Footer from './components/footer';
+
+ReactGA.initialize(process.env.REACT_APP_GA_ID, {
+  send_page_view: true,
+  gtagOptions: { cookie_flags: 'max-age=7200;secure;samesite=none' }
+});
 
 function App() {
   return (
