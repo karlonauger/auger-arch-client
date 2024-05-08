@@ -10,6 +10,7 @@ import About from './components/about';
 import AugerConstruction from './components/augerConstruction';
 import PartnerToProfit from './components/partnerToProfit';
 import Tetris from './components/tetris';
+import Infrastructure from './components/infrastructure';
 import Architecture from './components/architecture';
 import Footer from './components/footer';
 
@@ -24,6 +25,7 @@ function App() {
       <PartnerToProfit />
       <Tetris />
       <Architecture />
+      <Infrastructure />
       <Footer />
     </div>
   );
